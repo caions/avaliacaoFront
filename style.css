@@ -1,4 +1,237 @@
+.col-2{
+    height: 100vh;
+}
+.container-fluid{
+    background-color: #1f262e;
+}
+
+/*Navbar*/
+
+.btn {
+    border-radius: 0px;
+    margin-right: 30px;
+}
+
 input[type="search"] {
     text-align: center;
-    /*background-color: gray;*/
+    background-color:#47515b;
+    border: 0;
+}
+
+::placeholder {
+    color: rgb(165, 165, 165);
+    font-size: large;
+  }
+
+.bordered{
+    border-right: solid 1px black;
+    border-left: solid 1px #535456;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* sideBar */
+
+.sideBarContainer{
+    margin-top: 94px;
+    background-color: #eeeeee;;
+}
+
+.sideBarButton{
+    display: flex;
+    padding-left: 20px;
+    height: 60px;
+    border-top: solid #535456 1px;
+    border-bottom:solid black 1px;
+    align-items: center;
+    background-color: #333A42;
+    color: rgba(255,255,255,.55);
+}
+
+.sideBarButton i{
+  margin-right: 20px;
+}
+
+.sideBarLabelCount {
+    height: 23px;
+    width: 23px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(233, 89, 36);
+    margin-left: auto;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.selected{
+    background-color: #27a9e3;
+    border-bottom: 0px;
+    clip-path: polygon(115% 0%, 95% 50%, 115% 115%, -850% 0%)
+}
+
+/*Content-header*/
+.contentHeader{
+    background-color: white;
+    padding: 15px;
+    color: grey;    
+}
+
+.contentHeader i{
+    margin-right: 10px;
+   
+}
+
+/*Content article*/
+
+.contentArticle{
+   background-color: #eeeeee;
+   padding: 30px 20px;
+   color: grey;
+}
+
+.navLabel{
+    display: inline-flex;
+    margin-left: 10px;
+    width: 160px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    color: white;
+}
+
+.navLabel i{
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+/*Cards*/
+
+.col-6 .card{
+    border-radius: 0px;
+    font-size: 12px;
+}
+
+.card .card-header{
+    font-weight: bold;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.vertical-row {
+    margin: 0 10px 0 10px;
+    height: inherit;
+    border-left: 2px solid #eeeeee;
+} 
+
+.iconCard{
+    margin-left: 15px;
+}
+
+/*cardPosts*/
+.cardPosts1{
+    display: flex;
+    border-bottom: 1px dotted rgba(0,0,0,.125);
+    padding: 15px;
+}
+.cardPosts2{
+    display: flex;
+    border-bottom: 1px dotted rgba(0,0,0,.125);
+    padding: 15px;
+}
+
+.cardPosts1 i{
+    margin-top: 5px;
+    height: 85px;
+    display: table;
+    margin-right: 15px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #ddd9cc;
+    font-size: 15px;
+}
+.cardPosts2 i{
+    margin-top: 5px;
+    height: 85px;
+    display: table;
+    margin-right: 15px;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #ccdadd;
+    font-size: 15px;
+}
+
+/*cardTodo*/
+.cardTodo{
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.cardTodo .todoIcon{
+    margin-inline-start: auto;
+    
+}
+
+.nameLabel{
+    width: auto;
+    padding: 0 2%;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+}
+
+.dayLabel{
+    width: auto;
+    padding: 0% 3%;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+#cardTodoBorder{
+    padding: 0px 10px;
+}
+
+/*cardUpdate*/
+.cardUpdates{
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.cardUpdates i{
+    margin-top: 5px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.cardUpdates p{
+    font-weight: bold;
+    display: contents;
+}
+
+.date{
+    margin-inline-start: auto;
+    text-align: center;
+}
+
+.dateCardDay{
+    font-size: 25px;
+    font-weight: 700;
+    color: #bebcb9;
+    display: flex;
+    height: 27px;
+}
+
+.dateCardMonth{
+    font-size: 10px;
+    font-weight: 700;
+    color: #c3c4c2;
 }

@@ -15,55 +15,214 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
 
-    <title>Hello, world!</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user"></i>
-                            Welcome User
-                        </a>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-cog"></i> Setings</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-share"></i> Logout</a>
-                    </li>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-
-                </ul>
-                <form class="d-flex">
-                    <input type="search" placeholder="Search here..." aria-label="Search">
-                    <button class="btn btn-success"><i class="fas fa-search"></i></button>
-                </form>
+    <div class="container-fluid">
+        <div class="row">
+            <!--sideBar-->
+            <div class="col-2 p-0">
+                <div class="sideBarContainer">
+                    <span class="sideBarButton"><i class="fas fa-home"></i>Dashboard</span>
+                    <span class="sideBarButton"> <i class="fas fa-expand-arrows-alt"></i>Full width</span>
+                    <span class="sideBarButton"> <i class="fas fa-archive"></i>Forms
+                        <span class="sideBarLabelCount">3</span>
+                    </span>
+                    <span class="sideBarButton"> <i class="fas fa-pencil-alt"></i>Elements</span>
+                    <span class="sideBarButton selected"> <i class="far fa-file"></i>Addons
+                        <span class="sideBarLabelCount">5</span>
+                    </span>
+                </div>
             </div>
+
+            <div class="col-10 p-0">
+                <!--navbar-->
+                <nav class="navbar navbar-expand navbar-dark p-0">
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item dropdown bordered">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                                Welcome User
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item bordered">
+                            <a class="nav-link " href="#"><i class="fas fa-cog"></i> Setings</a>
+                        </li>
+                        <li class="nav-item bordered">
+                            <a class="nav-link " href="#"><i class="fas fa-share"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!--Seach Input-->
+                    <form class="d-flex">
+                        <input type="search" placeholder="Search here..." aria-label="Search">
+                        <button class="btn btn-success rounded-0"><i class="fas fa-search"></i></button>
+                    </form>
+                </nav>
+                <!--content-header-->
+                <div class="contentHeader">
+                    <i class="fas fa-home"></i>Home
+                </div>
+                <!--content-article-->
+                <!--Header-->
+                <div class="contentArticle">
+                    <div class="navLabel bg-info"><i class="fas fa-tachometer-alt"></i>My Dashboard</div>
+                    <div class="navLabel bg-success"><i class="fas fa-shopping-cart"></i>Shopping Cart</div>
+                    <div class="navLabel bg-warning"><i class="fas fa-globe-americas"></i>Web Marketing</div>
+                    <div class="navLabel bg-danger"><i class="fas fa-users"></i>Manage Users</div>
+                    <div class="navLabel bg-primary"><i class="fas fa-signal"></i>Check Statistics</div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <!--Posts Card-->
+                            <div class="card">
+                                <div class="card-header p-0">
+                                    <div class="iconCard">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <span class="vertical-row"></span> Latest Posts
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="cardPosts1"><i class="fas fa-chess-queen"></i>By: John Deo / Date: 2 Aug
+                                        2012 / Time: 09:27 AM <br>
+                                        This is a
+                                        much longer one that will go on for a few lines.It has multiple paragraphs and
+                                        is full
+                                        of waffle to pad out the comment.</li>
+                                    <li class="cardPosts2"><i class="fas fa-chess-queen"></i>By: John Deo / Date: 2 Aug
+                                        2012 / Time: 09:27 AM <br>
+                                        This is a
+                                        much longer one that will go on for a few lines.Itaffle to pad out the comment.
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <!--Todo Card-->
+                            <div class="card">
+                                <div class="card-header p-0">
+                                    <div class="iconCard">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <span class="vertical-row"></span> To Do List
+                                </div>
+                                <ul class="list-group list-group-flush" id="cardTodoBorder">
+                                    <li class="cardTodo">
+                                        Launch This theme on Themeforest
+                                        <span class="nameLabel bg-secondary">Nirav</span>
+                                        <span class="dayLabel bg-danger">Today</span>
+                                        <div class="todoIcon">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </li>
+                                    <li class="cardTodo">Manage Pending Orders
+                                        <span class="nameLabel bg-secondary">Alex</span>
+                                        <span class="dayLabel bg-warning">Today</span>
+                                        <div class="todoIcon">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </li>
+                                    <li class="cardTodo">Make your desk clean
+                                        <span class="nameLabel bg-secondary">Admin</span>
+                                        <span class="dayLabel bg-success">Tomorrow</span>
+                                        <div class="todoIcon">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </li>
+                                    <li class="cardTodo">Today we celebrate the great looking theme
+                                        <span class="nameLabel bg-secondary">Admin</span>
+                                        <span class="dayLabel bg-primary">08.03.2013</span>
+                                        <div class="todoIcon">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </li>
+                                    <li class="cardTodo">Manage all the orders
+                                        <span class="nameLabel bg-secondary">Mark</span>
+                                        <span class="dayLabel bg-primary">12.03.2013</span>
+                                        <div class="todoIcon">
+                                            <i class="fas fa-pencil-alt"></i>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Updates Card-->
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-header p-0">
+                                    <div class="iconCard">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <span class="vertical-row"></span> New Updates
+                                </div>
+                                <ul class="list-group list-group-flush">
+
+                                    <li class="cardUpdates">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.</p> <br>
+                                        dolor sit amet, consectetur adipiscing eli
+                                        <span class="date" >
+                                            <span class="dateCardDay">20</span>
+                                            <span class="dateCardMonth">jan</span>
+                                        </span>
+                                    </li>
+                                    <li class="cardUpdates">
+                                        <i class="fas fa-gift"></i>
+                                        <p>Congratulation Maruti, Happy Birthday</p> <br>
+                                        many many happy returns of the day
+                                        <span class="date" >
+                                            <span class="dateCardDay">11</span>
+                                            <span class="dateCardMonth">jan</span>
+                                        </span>
+                                    </li>
+                                    <li class="cardUpdates">
+                                        <i class="fas fa-arrows-alt"></i>
+                                        <p>Maruti is a Responsive Admin theme</p> <br>
+                                        But already everything was solved. It will...
+                                        <span class="date" >
+                                            <span class="dateCardDay">07</span>
+                                            <span class="dateCardMonth">jan</span>
+                                        </span>
+                                    </li>
+                                    <li class="cardUpdates">
+                                        <i class="fas fa-leaf"></i>
+                                        <p>Envato approved Maruti Admin template </p> <br>
+                                        i am very happy to approved by TF
+                                        <span class="date" >
+                                            <span class="dateCardDay">05</span>
+                                            <span class="dateCardMonth">jan</span>
+                                        </span>
+                                    </li>
+                                    <li class="cardUpdates">
+                                        <i class="fas fa-question-circle"></i>
+                                        <p>I am always here if you have a question</p> <br>
+                                        we glad that you choose our template
+                                        <span class="date" >
+                                            <span class="dateCardDay">01</span>
+                                            <span class="dateCardMonth">jan</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+
         </div>
-    </nav>
-
-    <button type="button" class="btn btn-primary">Primary</button>
-
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
